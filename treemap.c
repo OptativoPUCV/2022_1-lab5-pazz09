@@ -58,13 +58,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
             if (key == aux->pair->key) return;
         } 
     }
-
-
-
-
-
     */
-    return NULL;
 }
 
 TreeNode * minimum(TreeNode * x){
