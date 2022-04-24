@@ -109,3 +109,15 @@ treemap.c:49:6: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 754ad44
+Sun Apr 24 19:16:59 HSP 2022: 
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:67:12: error: 'return' with a value, in function returning void [-Werror]
+     return NULL;
+            ^~~~
+treemap.c:49:6: note: declared here
+ void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      ^~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+9259118
