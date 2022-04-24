@@ -122,7 +122,7 @@ Pair * nextTreeMap(TreeMap * tree) {
 
     TreeNode* a = tree->current;
     if (a->right != NULL){
-        return tree->current = minimun(a->right);
+        return minimun(a->right);
     }
     TreeNode *b = a->parent; 
     while (b != NULL && a == b->right){
