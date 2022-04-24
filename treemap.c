@@ -124,10 +124,10 @@ Pair * nextTreeMap(TreeMap * tree) {
     if (a->right != NULL){
         return minimun(a->right);
     }
-    TreeNode *b = a->pair;
+    TreeNode *b = a->parent; 
     while (b != NULL && a == b->right){
         a = b;
-        b = b->pair;
+        b = b->parent;
     }
     return b;
 }   
