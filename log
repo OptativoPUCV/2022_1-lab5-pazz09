@@ -60,3 +60,24 @@ treemap.c:134:23: error: assignment makes pointer from integer without a cast [-
 cc1.exe: all warnings being treated as errors
 Compilation failed
 63d8ea0
+Sun Apr 24 15:27:33 HSP 2022: 
+ treemap.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:67:8: error: 'return' with a value, in function returning void [-Werror]
+ return NULL;
+        ^~~~
+treemap.c:49:6: note: declared here
+ void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      ^~~~~~~~~~~~~
+treemap.c: In function 'nextTreeMap':
+treemap.c:135:25: error: implicit declaration of function 'minimun' [-Werror=implicit-function-declaration]
+         tree->current = minimun(tree->current->right);
+                         ^~~~~~~
+treemap.c:135:23: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+         tree->current = minimun(tree->current->right);
+                       ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+858d3ac
