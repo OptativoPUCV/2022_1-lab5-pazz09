@@ -134,7 +134,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         tree->current = minimun(tree->current->right);
     }
     else{
-        return tre->current->pair;
+        return tree->current->pair;
     }
     return NULL;
 }
