@@ -120,13 +120,14 @@ Pair * firstTreeMap(TreeMap * tree) {
 
 Pair * nextTreeMap(TreeMap * tree) {
 
-  /*  
-    if (tree->current->right != NULL){
-        tree->current = minimun(tree->current->right);
+    TreeNode* a = tree->current;
+    if (a->right != NULL){
+        return minimun(a->right);
     }
-    else{
-        return tree->current->pair;
+    TreeNode *b = a->pair;
+    while (b != NULL && a == b->right){
+        a = b;
+        b = b->pair;
     }
-    */
-    return NULL;
-}
+    return b;
+}   
