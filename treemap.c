@@ -92,7 +92,10 @@ void removeNode(TreeMap * tree, TreeNode* node) {
         }
         else{
             TreeNode* aux = node->right;
-            aux
+            aux = minimum(aux);
+            node->parent->left = aux;
+            aux->parent = node->parent;
+            aux->right = node->right;
         }    
     
     }
