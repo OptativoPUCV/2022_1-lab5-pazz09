@@ -197,5 +197,5 @@ Pair * nextTreeMap(TreeMap * tree) {
         }
     }
     */
-   return;
+   return NULL;
 }   
