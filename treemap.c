@@ -184,4 +184,5 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     return b->pair;
     */
+   return NULL;
 }   
