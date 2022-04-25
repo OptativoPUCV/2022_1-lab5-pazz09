@@ -54,6 +54,8 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
     TreeMap * b = tree->root;
     while (b != NULL){
         a = b;
+        if()
+
     }
     */
     
@@ -100,10 +102,8 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     
     }
     
-    
     tree->root->left = NULL;
-    
-    
+
 }
 
 void eraseTreeMap(TreeMap * tree, void* key){
