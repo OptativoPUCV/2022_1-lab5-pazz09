@@ -155,6 +155,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
                     aux = new;
                 }
                 else continue;
+                continue;
             }
             else return new->pair;
         }
