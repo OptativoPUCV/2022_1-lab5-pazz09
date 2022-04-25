@@ -266,3 +266,18 @@ treemap.c:198:1: error: control reaches end of non-void function [-Werror=return
 cc1.exe: all warnings being treated as errors
 Compilation failed
 b8932e7
+Sun Apr 24 22:26:16 HSP 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'nextTreeMap':
+treemap.c:184:23: error: implicit declaration of function 'minimun' [-Werror=implicit-function-declaration]
+         TreeNode* a = minimun(aux);
+                       ^~~~~~~
+treemap.c:184:23: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+treemap.c:198:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b9a860c
