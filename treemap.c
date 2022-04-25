@@ -149,9 +149,10 @@ Pair * upperBound(TreeMap * tree, void* key) {
                 new = new->right;
                
                 aux = new;
-            }
-            if (tree->lower_than(new->pair->key, aux->pair->key) == 1){
-                aux = new;
+            
+                if (tree->lower_than(new->pair->key, aux->pair->key) == 1){
+                    aux = new;
+                }
             }
             else return new->pair;
         }
