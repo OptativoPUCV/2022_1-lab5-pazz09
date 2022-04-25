@@ -143,8 +143,8 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 Pair * upperBound(TreeMap * tree, void* key) {
     
-    tree->current = tree->root;
     TreeNode* new = NULL;
+    tree->current = tree->root;
     while (1){
         if (tree->lower_than(tree->current->pair->key , key) == 1){
             if(tree->current->right == NULL) break;
@@ -158,7 +158,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
             continue;
         }
     }
-    if (tree->lower_than(tree->current->pair->key, key )== 1 && new != NULL) return new->pair;
+    if (tree->lower_than(tree->current->pair->key, key ) == 1 && new != NULL) return new->pair;
     if (new == NULL) return NULL;
     return tree->current->pair;
 }
